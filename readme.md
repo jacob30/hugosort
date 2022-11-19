@@ -1,0 +1,1 @@
+related to https://discourse.gohugo.io/t/same-date-sorts-differently-based-on-front-matter-in-markdown/41545
