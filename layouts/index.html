@@ -3,6 +3,10 @@
   <div id="home-jumbotron" class="jumbotron text-center">
     <h1 class="title">{{ .Site.Title }}</h1>
   </div>
+  <hr class="solid">
   {{ partial "recent" . }}
+  <hr class="solid">
+  {{ partial "recent-filter" . }}
+  <hr class="solid">
 </div>
 {{ end }}

@@ -1,5 +1,5 @@
 <div>
-    {{ range sort (where site.RegularPages "Section" "posts") "Params.start" }}
+    {{ range where (sort (where site.RegularPages "Section" "posts") "Params.start") "Params.start"  "ge" now }}
     {{ $dateTime := .Params.start | time.AsTime }}
     {{ $title := .Params.title }}
     <div>
