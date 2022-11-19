@@ -1,0 +1,6 @@
+baseURL: http://localhost:1313/
+languageCode: en-us 
+title: My New Hugo Site
+params:
+  DateForm: "2006-01-02T15:04:05Z0700"
+  dateFormat: "2006-01-02T15:04:05Z0700"

@@ -1,0 +1,18 @@
+<div>
+    <hr class="solid">
+    {{ $bydate := (where .Site.Pages "Section" "posts") }}
+    {{ range sort $bydate  (time ".Params.start") }}
+        {{ $dateTime := .Params.start  }}
+        {{ $title := .Params.title}}
+        {{ if $dateTime }}
+            <div> 
+                <p style="font-size:12px">
+                    <time datetime="{{ $dateTime }}">{{ $dateTime | time.Format ":date_long" }}</time>
+                    <t/>
+                    {{ $title }}
+                </p>
+            </div>
+        {{end}}
+    {{end}}
+    <hr class="solid">
+</div>
